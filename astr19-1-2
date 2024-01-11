@@ -1,4 +1,4 @@
-def perform_operations():
+def solutions():
     float1 = 3.4
     float2 = 1.6
     sum_result = float1 + float2
@@ -16,4 +16,4 @@ def perform_operations():
     print(f"Product: {product_result}, Type: {type(product_result)}")
 
 if __name__ == "__main__":
-    perform_operations()
+    solutions()
