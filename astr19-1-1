@@ -1,0 +1,4 @@
+def Personal_Intro():
+    print("My name is Saul Ramirez and I use He/Him pronouns. My favorite movie is Halloween and my favorite food is pizza.")
+if "__main__":
+    Personal_Intro()

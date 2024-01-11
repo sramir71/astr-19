@@ -1,0 +1,19 @@
+def perform_operations():
+    float1 = 3.4
+    float2 = 1.6
+    sum_result = float1 + float2
+    print(f"Sum: {sum_result}, Type: {type(sum_result)}")
+
+    int1 = 5
+    int2 = 3
+    diff_result = int1 - int2
+    print(f"Difference: {diff_result}, Type: {type(diff_result)}")
+
+ 
+    float3 = 5
+    int3 = 2
+    product_result = float3 * int3
+    print(f"Product: {product_result}, Type: {type(product_result)}")
+
+if __name__ == "__main__":
+    perform_operations()
