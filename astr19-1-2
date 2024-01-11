@@ -14,5 +14,5 @@ def solutions():
     product_result = float3 * int3
     print(f"Product: {product_result}, Type: {type(product_result)}")
 
-if __name__ == "__main__":
+if "__main__":
     solutions()
