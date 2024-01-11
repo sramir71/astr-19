@@ -9,7 +9,6 @@ def solutions():
     diff_result = int1 - int2
     print(f"Difference: {diff_result}, Type: {type(diff_result)}")
 
- 
     float3 = 5
     int3 = 2
     product_result = float3 * int3
