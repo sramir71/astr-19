@@ -1,0 +1,21 @@
+class Cat:
+    def __init__(cat, arm_length, leg_length, num_eyes, has_tail, is_furry):
+        cat.arm_length = arm_length
+        cat.leg_length = leg_length
+        cat.num_eyes = num_eyes
+        cat.has_tail = has_tail
+        cat.is_furry = is_furry
+
+    def describe(cat):
+        print("Cat Physical Characteristics:")
+        print(f"Arm Length: {cat.arm_length}cm")
+        print(f"Leg Length: {cat.leg_length}cm")
+        print(f"Number of Eyes: {cat.num_eyes}")
+        print(f"Has Tail: {cat.has_tail}")
+        print(f"Is Furry: {cat.is_furry}")
+
+def main():
+    my_favorite_cat = Cat(10.5, 15.0, 2, True, True)
+    my_favorite_cat.describe()
+if __name__ == "__main__":
+    main()
