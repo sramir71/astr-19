@@ -1,0 +1,15 @@
+import numpy as np
+
+def generate_table():
+    x_values = np.linspace(0, 2, 1000)
+    sin_values = np.sin(x_values)
+
+    print("{:<15} {:<15}".format("x", "sin(x)"))
+    print("-" * 30)
+
+    for x, sin_x in zip(x_values, sin_values):
+        print("{:<15.4f} {:<15.4f}".format(x, sin_x))
+
+if __name__ == "__main__":
+    generate_table()
+
