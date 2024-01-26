@@ -1,1 +1,55 @@
+# Cell 1: Import necessary libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Cell 2: Define functions for sin(x) and cos(x)
+def sine_function(x):
+    """
+    Returns the sine of x.
+
+    Parameters:
+    x (float): Input value in radians.
+
+    Returns:
+    float: Sine of x.
+    """
+    return np.sin(x)
+
+def cosine_function(x):
+    """
+    Returns the cosine of x.
+
+    Parameters:
+    x (float): Input value in radians.
+
+    Returns:
+    float: Cosine of x.
+    """
+    return np.cos(x)
+
+# Cell 3: Tabulate sin(x) and cos(x) using the defined functions
+# Tabulate sin(x) and cos(x) for x values between 0 and 2 with a thousand entries
+x_values = np.linspace(0, 2, 1000)
+sin_values = sine_function(x_values)
+cos_values = cosine_function(x_values)
+
+# Create a DataFrame to display the values
+table_df = pd.DataFrame({
+    'x': x_values,
+    'sin(x)': sin_values,
+    'cos(x)': cos_values
+})
+
+table_df.head()  # Display the first few rows of the table
+
+# Cell 4: Print the first 10 values of x, sin(x), and cos(x) using a for loop
+# Print the first 10 values of x, sin(x), and cos(x)
+print("   x\t   sin(x)\t   cos(x)")
+print("-" * 30)
+for i in range(10):
+    x_val = x_values[i]
+    sin_val = sine_function(x_val)
+    cos_val = cosine_function(x_val)
+    print(f"{x_val:.2f}\t{sin_val:.4f}\t{cos_val:.4f}")
 
