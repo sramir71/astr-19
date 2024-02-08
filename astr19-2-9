@@ -1,0 +1,11 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+random_numbers = np.random.uniform(0, 1, 1000)
+plt.hist(random_numbers, bins=100)
+
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+
+plt.savefig('histogram.pdf')
+plt.show()
