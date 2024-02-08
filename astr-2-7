@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 1, 100)
+
+
+def my_exp(x):
+    return np.exp(x)
+
+y = my_exp(x)
+plt.plot(x, y)
+plt.xlabel('Time [milliseconds]')
+plt.ylabel('Awesomeness')
+
+plt.savefig('plot.pdf')
+plt.show()
